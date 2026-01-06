@@ -1,0 +1,37 @@
+program _pRGR ; 
+var int _aAAA , _bBBB , _cYCA , _cYCB , _xVAL;
+  begin
+  input ( _aAAA )
+  input ( _bBBB )
+
+  _aAAA =: _cYCA
+_lCBE:
+  if _cYCA gt _bBBB {
+    goto _lCND
+  }
+  output ( _cYCA * _cYCA )
+  _cYCA + 1 =: _cYCA
+  goto _lCBE
+_lCND:
+
+  0 =: _xVAL
+  1 =: _cYCA
+_lAGN:
+  if _cYCA gt _aAAA {
+     goto _lAND
+  }
+  1 =: _cYCB
+_lBIN:
+  if _cYCB gt _bBBB {
+     goto _lBND
+  }
+  _xVAL + 1 =: _xVAL
+  _cYCB + 1 =: _cYCB
+  goto _lBIN
+_lBND:
+  _cYCA + 1 =: _cYCA
+  goto _lAGN
+_lAND:
+  output ( _xVAL )
+
+end

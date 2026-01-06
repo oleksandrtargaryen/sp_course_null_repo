@@ -1,0 +1,35 @@
+program _pRGR;
+var int _aAAA , _bBBB, _cCCC, _mMAX;
+  begin
+  input (_aAAA);
+  input (_bBBB);
+  input (_cCCC);
+
+  if _aAAA gt _bBBB && _aAAA gt _cCCC {
+     _mMAX =: _aAAA;
+  } else if _bBBB gt _aAAA && _bBBB gt _cCCC {
+     _mMAX =: _bBBB;
+  } else {
+     _mMAX =: _cCCC;
+  }
+  output (_mMAX);
+
+  if (_aAAA eg _bBBB  && _aAAA eg _cCCC && _bBBB eg _cCCC) {
+    output (1);
+  } else {
+    output (0);
+  }
+    
+  if (_aAAA lt 0 || _bBBB lt 0 || _cCCC lt 0 ) {
+    output (- 1);
+  } else {
+    output (0);
+  }
+
+  if !! (_aAAA lt _bBBB + _cCCC) {
+    output (10);
+  } else {
+    output (0);
+  }
+ 
+end

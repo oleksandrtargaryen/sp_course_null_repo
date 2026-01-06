@@ -1,0 +1,19 @@
+program _pAAA;
+var
+    int _aAAA, _bBBB, _xXXX, _yYYY;
+begin
+    input(_aAAA);
+    input(_bBBB);
+
+    output(_aAAA + _bBBB);
+    output(_aAAA - _bBBB);
+    output(_aAAA * _bBBB);
+    output(_aAAA / _bBBB);
+    output(_aAAA % _bBBB);
+
+    _xXXX =: ((_aAAA - _bBBB) * 10) + ((_aAAA + _bBBB) / 10);
+    _yYYY =: _xXXX + (_xXXX % 10);
+
+    output(_xXXX);
+    output(_yYYY);
+end
